@@ -85,8 +85,8 @@ def make_import_file(calendar_yotei,year,month,private="False"):
 
 if __name__ == '__main__':
     now = datetime.datetime.now()
-    year = now.year
-    month = now.month
+    year = int(input("年入力例："+str(now.year)+"\t"))
+    month = int(input("月入力例："+str(now.month)+"\t"))
     url = "https://bang-dream.com/news/schedule?ym="
 
     url += str(year) + niketa(month)
